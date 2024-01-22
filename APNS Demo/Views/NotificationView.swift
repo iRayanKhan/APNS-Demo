@@ -128,13 +128,3 @@ struct NotificationsView: View {
         }.resume()
     }
 }
-
-
-
-/*
- {
- "title": "Push Test 001",
- "subTitle": "From 00p1um Labs",
- "deviceToken": ""
- }
- */
