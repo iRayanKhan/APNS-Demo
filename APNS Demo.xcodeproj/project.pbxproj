@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2748A2F12B5A4788002A7522 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2748A2F02B5A4788002A7522 /* NotificationManager.swift */; };
 		27BE32B72B5A366600C28D47 /* APNS_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BE32B62B5A366600C28D47 /* APNS_DemoApp.swift */; };
-		27BE32B92B5A366600C28D47 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BE32B82B5A366600C28D47 /* ContentView.swift */; };
 		27BE32BB2B5A366700C28D47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27BE32BA2B5A366700C28D47 /* Assets.xcassets */; };
 		27BE32BE2B5A366700C28D47 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27BE32BD2B5A366700C28D47 /* Preview Assets.xcassets */; };
 		27BE32C52B5A367A00C28D47 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BE32C42B5A367A00C28D47 /* NotificationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2748A2F02B5A4788002A7522 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		2768BAB22B5A4403007AE011 /* APNS Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "APNS Demo.entitlements"; sourceTree = "<group>"; };
+		2768BAB32B5A4413007AE011 /* APNS-Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "APNS-Demo-Info.plist"; sourceTree = SOURCE_ROOT; };
 		27BE32B32B5A366600C28D47 /* APNS Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "APNS Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27BE32B62B5A366600C28D47 /* APNS_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APNS_DemoApp.swift; sourceTree = "<group>"; };
-		27BE32B82B5A366600C28D47 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		27BE32BA2B5A366700C28D47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27BE32BD2B5A366700C28D47 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		27BE32C42B5A367A00C28D47 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
@@ -53,9 +55,10 @@
 		27BE32B52B5A366600C28D47 /* APNS Demo */ = {
 			isa = PBXGroup;
 			children = (
-				27BE32B62B5A366600C28D47 /* APNS_DemoApp.swift */,
-				27BE32B82B5A366600C28D47 /* ContentView.swift */,
-				27BE32C42B5A367A00C28D47 /* NotificationView.swift */,
+				27EBD5A92B5F07C60020A49B /* Views */,
+				27EBD5AA2B5F07D50020A49B /* Models */,
+				2768BAB32B5A4413007AE011 /* APNS-Demo-Info.plist */,
+				2768BAB22B5A4403007AE011 /* APNS Demo.entitlements */,
 				27BE32BA2B5A366700C28D47 /* Assets.xcassets */,
 				27BE32BC2B5A366700C28D47 /* Preview Content */,
 			);
@@ -68,6 +71,23 @@
 				27BE32BD2B5A366700C28D47 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		27EBD5A92B5F07C60020A49B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				27BE32B62B5A366600C28D47 /* APNS_DemoApp.swift */,
+				27BE32C42B5A367A00C28D47 /* NotificationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		27EBD5AA2B5F07D50020A49B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2748A2F02B5A4788002A7522 /* NotificationManager.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,8 +160,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27BE32B92B5A366600C28D47 /* ContentView.swift in Sources */,
 				27BE32B72B5A366600C28D47 /* APNS_DemoApp.swift in Sources */,
+				2748A2F12B5A4788002A7522 /* NotificationManager.swift in Sources */,
 				27BE32C52B5A367A00C28D47 /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,12 +293,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "APNS Demo/APNS Demo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"APNS Demo/Preview Content\"";
 				DEVELOPMENT_TEAM = 9489Q3YVAN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "APNS-Demo-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -303,12 +325,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "APNS Demo/APNS Demo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"APNS Demo/Preview Content\"";
 				DEVELOPMENT_TEAM = 9489Q3YVAN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "APNS-Demo-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
