@@ -1,7 +1,8 @@
 # APNS Demo 
 
-
 APNS Demo is a 100% Swift/SwiftUI client to test if push notifications work when re-signed.
+
+FREE PALESTINE 🇵🇸
 
 ## Features:
 * Customize notification title and subtitle
@@ -10,15 +11,15 @@ APNS Demo is a 100% Swift/SwiftUI client to test if push notifications work when
 
 ## Installation
 * Requires iOS 14.0+
-* Download the pre-compiled .ipa from [Releases]()
-* Sideload the app using any sideload tool using a certificate the supports notifications
+* Download the pre-compiled .ipa from [Releases](https://github.com/iRayanKhan/APNS-Demo/releases)
+* Sideload the app using any sideload tool using a certificate that supports notifications
 * [TanaraSign](https://github.com/iRayanKhan/TanaraSign) is a recommeneded sideload tool
 
 ## Building the project:
 * To build the project you will need Xcode 15.0+
-* Using the app installed via Xcode results in a sanbox notification environment which results a bad token, and defeats the use case of this project.
+* Using the app installed via Xcode results in a sandbox notification environment which results a bad token, and defeats the use case of this project.
 * Archive the app ```Product > Archive > Release Testing```
-* Sideload the app using any sideload tool using a certificate the supports notifications
+* Sideload the app using any sideload tool using a certificate that supports notifications
 * [TanaraSign](https://github.com/iRayanKhan/TanaraSign) is a recommeneded sideload tool
 
 ## Manual testing:
